@@ -45,5 +45,5 @@ English | [简体中文](README_zh-CN.md)
 
 
 
-<img src="images/result.png" width="600"/>
+<img src="images/Result.png" width="600"/>
 
