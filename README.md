@@ -43,7 +43,8 @@ English | [简体中文](README_zh-CN.md)
 
 </div>
 
+Test Result Demo
 
-
-<img src="images/Result.png" width="600"/>
+<div align="center">
+  <img src="images/Result.png" width="600"/></div>
 
