@@ -317,118 +317,118 @@ segmentation training set.</p>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Baseline 180 Epochs Baseline</td>
-<td style="text-align: right;">○</td>
-<td style="text-align: center;">(0,0) circle (0.8ex);</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">○</td>
 <td style="text-align: center;"><strong>0.2760</strong></td>
 <td rowspan="2" style="text-align: center;">67.003G</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Baseline 1000 Epochs</td>
-<td style="text-align: center;">(0,0) circle (0.8ex);</td>
-<td style="text-align: center;">(0,0) circle (0.8ex);</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">○</td>
 <td style="text-align: center;">0.4271</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Unet</td>
-<td style="text-align: center;">(0,0) circle (0.8ex);</td>
-<td style="text-align: center;">(0,0) circle (0.8ex);</td>
+<td style="text-align: center;">○</td>
+<td style="text-align: center;">○</td>
 <td style="text-align: center;">0.4555</td>
 <td style="text-align: center;">356G</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Deeplabv3Plus &amp; ResNet18</td>
 <td style="text-align: center;">●</td>
-<td style="text-align: center;">(0,0) circle (0.8ex);</td>
+<td style="text-align: center;">○</td>
 <td style="text-align: center;">0.5682</td>
 <td style="text-align: center;">97.193G</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Deeplabv3Plus &amp; ResNet50</td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
-<td style="text-align: center;">(0,0) circle (0.8ex);</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
 <td style="text-align: center;">0.6041</td>
 <td style="text-align: center;">316G</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Deeplabv3Plus &amp; ResNet101</td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
-<td style="text-align: center;">(0,0) circle (0.8ex);</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
 <td style="text-align: center;">0.6063</td>
 <td style="text-align: center;">455G</td>
 </tr>
 <tr class="odd">
 <td rowspan="2" style="text-align: left;">Swin v1 Tiny 22k +
 SegFormer</td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
-<td style="text-align: center;">(0,0) circle (0.8ex);</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
 <td style="text-align: center;">0.5945</td>
 <td rowspan="2" style="text-align: center;">79.472G</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
 <td style="text-align: center;">0.7628</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">SegFormer B0*</td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
-<td style="text-align: center;">(0,0) circle (0.8ex);</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
 <td style="text-align: center;">0.5533</td>
 <td style="text-align: center;">15.579G</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">SegFormer B2*</td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
-<td style="text-align: center;">(0,0) circle (0.8ex);</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
 <td style="text-align: center;">0.6141</td>
 <td style="text-align: center;">50.633G</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">SegFormer B5*</td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
-<td style="text-align: center;">(0,0) circle (0.8ex);</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
 <td style="text-align: center;">0.6842</td>
 <td style="text-align: center;">150G</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">SegFormer B0</td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
 <td style="text-align: center;">0.7460</td>
 <td style="text-align: center;"><strong>15.579</strong>G</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>SegFormer B2</strong></td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
 <td style="text-align: center;">0.7845</td>
 <td style="text-align: center;">50.633G</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">SegFormer B5</td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">●</td>
 <td style="text-align: center;"><strong>0.8018</strong></td>
 <td style="text-align: center;">150G</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">PSPNet &amp; ResNet18</td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
-<td style="text-align: center;">(0,0) circle (0.8ex);</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
 <td style="text-align: center;">0.5933</td>
 <td style="text-align: center;">97.213G</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">PSPNet &amp; ResNet101</td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
-<td style="text-align: center;">(0,0) circle (0.8ex);</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
 <td style="text-align: center;">0.6370</td>
 <td style="text-align: center;">459G</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">CWD PSPNet &amp; R18(S) R101(T)</td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
-<td style="text-align: center;">(0,0) circle (0.8ex);</td>
+<td style="text-align: center;">●</td>
+<td style="text-align: center;">○</td>
 <td style="text-align: center;">0.5449</td>
 <td style="text-align: center;">99 G</td>
 </tr>
