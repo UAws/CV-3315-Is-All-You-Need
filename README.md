@@ -23,7 +23,7 @@
        University of Adelaide
   </div>
   <div>&nbsp;</div>
-
+</div>
 
 ## Report Preview
 
@@ -33,7 +33,10 @@
 
 ## Model Real World Application
 
-[![Youtube](https://minio.llycloud.com/image/uPic/image-20220625rbHWgi.png)](https://www.youtube.com/watch?v=tKUe0yRzNrM)
+
+[![Youtube](https://img.youtube.com/vi/tKUe0yRzNrM/0.jpg)](https://www.youtube.com/watch?v=tKUe0yRzNrM)
+
+
 
 This is a preview video captured nearby The University Of Adelaide and applied our pre-trained model segformer-B5 on the completion dataset.
 
@@ -60,18 +63,20 @@ There is screenshot of results displayed during the experiment, it's persistent 
 ## Evaluation
 
 <div align="center">
-	<h3>View Evaluation On Jovian.ai </h3>
-  <a href="https://jovian.ai/akide/cv-competition-segmentation">
-    <img src="https://img.shields.io/badge/Jovian.Ai-Open%20In%20Jovian-blue" alt="Open In Colab"/>
-  </a>
+	<h3>View Evaluation On Jovian.ai
+	  <a href="https://jovian.ai/akide/cv-competition-segmentation">
+	    <img src="https://img.shields.io/badge/Jovian.Ai-Open%20In%20Jovian-blue" alt="Open In Colab"/>
+	  </a>
+	</h3>
 </div>
 
 
 <div align="center">
-	<h3>View Evaluation On Colaboratory </h3>
-  <a href="https://colab.research.google.com/github/UAws/CV-3315-Is-All-You-Need/blob/main/Segmentation.ipynb">
-    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-  </a>
+	<h3>View Evaluation On Colaboratory 
+	  <a href="https://colab.research.google.com/github/UAws/CV-3315-Is-All-You-Need/blob/main/Segmentation.ipynb">
+	    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+	  </a>
+	</h3>
 </div>
 
 
