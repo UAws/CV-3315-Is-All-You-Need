@@ -342,7 +342,7 @@ a ResNet as its main feature extractor except that the last block is
 modified to use atrous convolutions with different dilation rates. This
 study explored the performance of DeepLabV3 as a semantic segmentation
 model using three ImageNet pre-trained ResNet models, namely: ResNet18,
-ResNet50, and ResNet101 <span class="citation"
+ResNet50, and ResNet101<span class="citation"
 data-cites="he2016deep"></span>.</p>
 <p>Among all the CNN models mentioned above, the problems of spatial
 information extraction, edge reconstruction, and lightweight designs are
@@ -359,7 +359,7 @@ designs. A shift from CNNs to transformers recently began with the
 Vision transformer (ViT). Basically, it treats each image as a sequence
 of tokens and then feeds them to multiple Transformer layers to make the
 classification. It is the first work to prove that a pure Transformer
-can achieve state-of-the-art performance in image classification <span
+can achieve state-of-the-art performance in image classification<span
 class="citation" data-cites="pvt vit"></span>.</p>
 <p>Based on the pioneering work, many subsequent works made
 advancements. For instance, SETR <span class="citation"
@@ -372,7 +372,7 @@ segmentation tasks <span class="citation" data-cites="surr"></span>.</p>
 this matter, SegFormer proposed a simple and efficient design without
 positional encoding and uses a simple decoder (segmentation head) to
 obtain the final segmentation results, thus, achieving a competitive
-performance to the models with the same complexity <span
+performance to the models with the same complexity<span
 class="citation" data-cites="han2021transformer"></span>.</p>
 <p><strong>SegFormer.</strong> SegFormer is a simple, efficient yet
 powerful semantic segmentation framework which unifies Transformers with
@@ -433,7 +433,7 @@ K is [N, C], what it does is to reshape it to [N/R, C*R] first, and then
 change the dimension to [N/R, C] through the fully connected layer,
 thereby reduce the computational complexity to O(<span
 class="math inline"><em>N</em><sup>2</sup></span>/ R). R is set to [64,
-16, 4, 1] from stage1 to stage4, respectively <span class="citation"
+16, 4, 1] from stage1 to stage4, respectively<span class="citation"
 data-cites="xie2021segformer"></span>.</p>
 <p><span class="math display">$$\begin{aligned}
 &amp;\hat{K}=\text { Reshape }\left(\frac{N}{R}, C \cdot R\right)(K) \\
