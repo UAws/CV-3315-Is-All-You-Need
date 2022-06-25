@@ -10,7 +10,7 @@
       </a>
   </div>
   <div>&nbsp;</div>
-  
+
    <div align="center">
       School of Computer Science
     &nbsp;&nbsp;&nbsp;&nbsp;
@@ -24,30 +24,157 @@
   <div>&nbsp;</div>
 
 
-<br />
+## Report Preview
 
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mmsegmentation)](https://pypi.org/project/mmsegmentation/)
-[![PyPI](https://img.shields.io/pypi/v/mmsegmentation)](https://pypi.org/project/mmsegmentation)
-[![docs](https://img.shields.io/badge/docs-latest-blue)](https://mmsegmentation.readthedocs.io/en/latest/)
-[![badge](https://github.com/open-mmlab/mmsegmentation/workflows/build/badge.svg)](https://github.com/open-mmlab/mmsegmentation/actions)
-[![codecov](https://codecov.io/gh/open-mmlab/mmsegmentation/branch/master/graph/badge.svg)](https://codecov.io/gh/open-mmlab/mmsegmentation)
-[![license](https://img.shields.io/github/license/open-mmlab/mmsegmentation.svg)](https://github.com/open-mmlab/mmsegmentation/blob/master/LICENSE)
-[![issue resolution](https://isitmaintained.com/badge/resolution/open-mmlab/mmsegmentation.svg)](https://github.com/open-mmlab/mmsegmentation/issues)
-[![open issues](https://isitmaintained.com/badge/open/open-mmlab/mmsegmentation.svg)](https://github.com/open-mmlab/mmsegmentation/issues)
+### The preprint view report temporarily available at https://minio.llycloud.com/public/cv3315/CV_COMPETITION_Public.pdf , arXiv version GA in next 3 days.
 
-[📘Documentation](https://mmsegmentation.readthedocs.io/en/latest/) |
-[🛠️Installation](https://mmsegmentation.readthedocs.io/en/latest/get_started.html) |
-[👀Model Zoo](https://mmsegmentation.readthedocs.io/en/latest/model_zoo.html) |
-[🆕Update News](https://mmsegmentation.readthedocs.io/en/latest/changelog.html) |
-[🤔Reporting Issues](https://github.com/open-mmlab/mmsegmentation/issues/new/choose)
 
-</div>
+
+## Model Real World Application
+
+[![Youtube](https://minio.llycloud.com/image/uPic/image-20220625rbHWgi.png)](https://www.youtube.com/watch?v=tKUe0yRzNrM)
+
+This is a preview video captured nearby The University Of Adelaide and applied our pre-trained model segformer-B5 on the completion dataset.
+
+
+
+## Installation
+
+For Installation, please refer to the guidelines in [MMSegmentation v0.25.0](https://github.com/open-mmlab/mmsegmentation/tree/v0.25.0).
+
+For the dataset preparation, please refer own [customized dataloader](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/configs/_base_/datasets/kitti_seg_basic.py) and more general adaptable dataset support is [working in progress](https://github.com/open-mmlab/mmsegmentation/pull/1602) to contribute to mmseg mainline codebase.
+
+Additional requirements : [environment-linux.yml](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/environment-linux.yml)
+
+Our development environment is based on `CUDA 11.7` and `pytorch 1.12.0`
+
+## Experiment Visualization
+
+Thanks for experimental tracing system provided by [WandB](https://jovian.ai/outlink?url=https%3A%2F%2Fwandb.ai%2F)
+
+There is screenshot of results displayed during the experiment, it's persistent record the running logs and figures for better analysis, evaluation and experiment reproducibility.
+
+[![wandb](https://minio.llycloud.com/image/uPic/image-2022062542UBJ4.png)](https://wandb.ai/ak6/mmseg_training_kitti_segFormer/reports/CV-3315-Is-All-You-Need-Report--VmlldzoyMjIzMjM3?accessToken=qz2bicligu2cru0yr8ws9mijx8dnajhv6m9iq4gdacuuyma6ao5dqlfu7t08hp1d)
+
+## Evaluation
 
 <div align="center">
-
-English | [简体中文](README_zh-CN.md)
-
+	<h3>View Evaluation On Jovian.ai </h3>
+  <a href="https://jovian.ai/akide/cv-competition-segmentation">
+    <img src="https://img.shields.io/badge/Jovian.Ai-Open%20In%20Jovian-blue" alt="Open In Colab"/>
+  </a>
 </div>
+
+
+<div align="center">
+	<h3>View Evaluation On Colaboratory </h3>
+  <a href="https://colab.research.google.com/github/UAws/CV-3315-Is-All-You-Need/blob/main/Segmentation.ipynb">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+  </a>
+</div>
+
+
+
+For more detailed explanation of evaluation and inference please refer [MMseg Official docs](https://github.com/open-mmlab/mmsegmentation/blob/v0.25.0/docs/en/inference.md)
+
+### Segformer B0 Most Efficient
+
+```bash
+mkdir -p checkpoints
+wget -nv http://vmv.re/910Yk -O checkpoints/Segformer_B0.pth
+
+python tools/test.py configs/segformer/segformer_mit-b0_8x1_1024x1024_160k_kitti.py checkpoints/Segformer_B0.pth --eval mIoU
+```
+
+
+
+### Segformer B2 FOR FINAL COMPETITION
+
+```bash
+mkdir -p checkpoints
+wget -nv http://vmv.re/W9ldy -O checkpoints/Segformer_B2.pth 
+python tools/test.py configs/segformer/segformer_mit-b2_8x1_1024x1024_160k_kitti.py checkpoints/Segformer_B2.pth --eval mIoU
+```
+
+
+
+### Segformer B5 Best Performance
+
+```bash
+mkdir -p checkpoints work_dirs/Segformer_B5/out_images
+wget -nv http://vmv.re/vUwvf -O checkpoints/Segformer_B5.pth 
+python tools/test.py configs/segformer/segformer_mit-b5_8x1_1024x1024_160k_kitti.py checkpoints/Segformer_B5.pth --eval mIoU --show-dir work_dirs/Segformer_B5/out_images
+```
+
+
+
+### Baseline Model 180 epochs
+
+```bash
+mkdir -p checkpoints
+wget -nv http://vmv.re/q4OtB -O checkpoints/baseline.pth
+python tools/test.py configs/basicNet/basicnet_8x1_1024x1024_180e_kitti.py  checkpoints/baseline.pth --eval mIoU
+```
+
+
+
+### Baseline Model 1000 epochs and output Segmentation results images 
+
+```bash
+mkdir -p checkpoints work_dirs/baseline_1000/out_images
+wget -nv http://vmv.re/dPgO0 -O checkpoints/baseline_1000.pth 
+python tools/test.py configs/basicNet/basicnet_8x1_1024x1024_1000e_kitti.py  checkpoints/baseline_1000.pth --eval mIoU --show-dir work_dirs/baseline_1000/out_images
+```
+
+
+
+### UNet model
+
+```bash
+mkdir -p checkpoints
+wget -nv http://vmv.re/bNQi9 -O checkpoints/UNet.pth 
+python tools/test.py configs/unet/fcn_unet_s5-d16_4x4_512x1024_160k_kitti.py  checkpoints/UNet.pth --eval mIoU
+```
+
+
+
+### DeeplabV3plus + Resnet101
+
+```bash
+mkdir -p checkpoints
+wget -nv http://vmv.re/Teioj -O checkpoints/DeeplabV3plus_Resnet101.pth 
+python tools/test.py configs/deeplabv3plus/deeplabv3plus_r101-d8_512x1024_40k_kitti.py checkpoints/DeeplabV3plus_Resnet101.pth --eval mIoU
+```
+
+
+
+### Swin v1 Tiny 22k + Segformer
+
+```bash
+mkdir -p checkpoints
+wget -nv http://vmv.re/CPUJM -O checkpoints/Segformer_Swin.pth 
+
+python tools/test.py configs/segformer/segformer_swin_4x2_1024x1024_160k_kitti.py checkpoints/Segformer_Swin.pth --eval mIoU
+```
+
+
+
+## Training and Reproduce Our Results
+
+For more detailed explanation of training please refer [MMseg Official docs](https://github.com/open-mmlab/mmsegmentation/blob/v0.25.0/docs/en/train.md)
+
+### Segformer B2
+
+Following command will download imagenet 1k pre-trained backlone `mit-b2` and cityscapes pre-trained decoder `segformer` to perform transfer learning on 4 GPUs for 2K iterations.
+
+```bash
+mkdir pretrain checkpoints
+wget http://vmv.re/XLJIJ -O pretrain/mit_b2.pth
+wget http://vmv.re/NVIhC -O checkpoints/segformer_mit-b2_8x1_1024x1024_160k_cityscapes_20211207_134205-6096669a.pth
+bash tools/dist_train.sh configs/segformer/segformer_mit-b2_8x1_1024x1024_160k_kitti.py 4 --load-from checkpoints/segformer_mit-b2_8x1_1024x1024_160k_cityscapes_20211207_134205-6096669a.pth
+```
+
+##   
 
 
 
