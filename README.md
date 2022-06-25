@@ -92,7 +92,7 @@ For the dataset preparation, please refer own [customized dataloader](https://gi
 
 Additional requirements : [environment-linux.yml](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/environment-linux.yml)
 
-Our development environment is based on `CUDA 11.7` and `pytorch 1.12.0`
+Our development environment is based on `CUDA 11.7` and `pytorch 1.11.0`
 
 ### Dataset preparation 
 
@@ -225,7 +225,7 @@ For more detailed explanation of training please refer [MMseg Official docs](htt
 
 ### Segformer B2
 
-Following command will download imagenet 1k pre-trained backlone `mit-b2` and cityscapes pre-trained decoder `segformer` to perform transfer learning on 4 GPUs for 2K iterations.
+Following command will download imagenet 1k pre-trained backbone `mit-b2` and cityscapes pre-trained decoder `segformer` to perform transfer learning on 4 GPUs for 20K iterations.
 
 ```bash
 mkdir pretrain checkpoints
