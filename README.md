@@ -23,7 +23,7 @@
        University of Adelaide
   </div>
   <div>&nbsp;</div>
-	
+
   <a href="https://jovian.ai/akide/cv-competition-segmentation">
     <img src="https://img.shields.io/badge/Jovian.Ai-Open%20In%20Jovian-blue"/>
   </a>
@@ -53,12 +53,18 @@
 </a>
 
 
-	
+​	
 </div>
 
-## Report Preview
+## Highlights
 
-### The preprint view report temporarily available at [CV_COMPETITION_Public.pdf](https://minio.llycloud.com/public/cv3315/CV_COMPETITION_Public.pdf) , arXiv version GA in next 3 days.
+- ### The preprint view report temporarily available at [CV_COMPETITION_Public.pdf](https://minio.llycloud.com/public/cv3315/CV_COMPETITION_Public.pdf) , arXiv version GA in next 3 days.
+
+- ### There is a bridge to connect mmseg and our evaluation notebook refers to **[loader.py](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/bridge/loader.py)** .
+
+- ### We implemented grey scale out for calculate mIoU refers to [segmentors/base.py](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/mmseg/models/segmentors/base.py#L217-L301) .
+
+- ### There is [accurate Flops counter](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/tools/get_flops_fvscore.py) fvcore integrated to mmseg codebase to examining transformer-based model efficiency.
 
 
 
