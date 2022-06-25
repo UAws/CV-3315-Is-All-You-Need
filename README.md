@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/logo.png" width="600"/>
+  <img src="images/logo1.png" width="600"/>
   <div>&nbsp;</div>
   <div align="center">
       <a href="https://github.com/AkideLiu">
@@ -10,6 +10,7 @@
       </a>
   </div>
   <div>&nbsp;</div>
+
 
    <div align="center">
       School of Computer Science
@@ -200,10 +201,11 @@ data-cites="surr minaee2021image"></span>.</p>
 to develop a basic understanding of semantic segmentation by reviewing,
 evaluating, and tuning existing methods, thereby providing a terrific
 solution that satisfies both efficiency and accuracy criteria to the
-given road segmentation task.</p>
+given road segmentation task.</p><br>
 <div align="center" class="figure*">
   <img src="images/Result.png" width="600"/>
-</div>
+  <div align="center"><b>Figure 1. Performance vs. model efficiency on the target dataset. The symbol * indicates that the model did not pretrained on Cityscape dataset. ResNet and DeepLabV3Plus are abbreviated as R and DeepLabV3, respectively</b>.</div> 
+</div><br>
 <h2 id="report-structure">Report Structure</h2>
 <p>The remaining parts of this report are organized as follows. Section
 <a href="#sec:method" data-reference-type="ref"
@@ -213,8 +215,8 @@ in Section <a href="#sec:experiment" data-reference-type="ref"
 data-reference="sec:experiment">3</a>, and Section <a
 href="#sec:conclusion" data-reference-type="ref"
 data-reference="sec:conclusion">4</a> concludes the report.</p>
-<h1 id="sec:method">Method</h1>
-<h2 id="baseline-model-analysis">Baseline Model Analysis</h2>
+<h1 id="sec:method">1. Method</h1>
+<h2 id="baseline-model-analysis">1.1 Baseline Model Analysis</h2>
 
 <p>The Baseline model comprises an Encoder-Decoder architecture.
 Basically, it extracts the feature maps from the image input and
@@ -245,7 +247,7 @@ connections from its pooling layers to fully recover fine-grained
 spatial information lost during downsampling <span class="citation"
 data-cites="surr"></span>.</p>
 
-<h2 id="networks-architecture-exploration">Networks Architecture
+<h2 id="networks-architecture-exploration">1.2 Networks Architecture
 Exploration</h2>
 <p><strong><u>CNN.</u></strong> CNNs have been found quite efficacious
 for many computer vision tasks in recent years <span class="citation"
@@ -346,7 +348,11 @@ Encoder – Layered Transformer produces high resolution low-level
 features and low-resolution detail features.<br />
 Decoder – A lightweight full MLP decoder fuses multi-level features to
 obtain semantic segmentation results.<br />
-</p>
+</p><br>
+<div align="center" class="figure">
+  <img src="images/segformer.png" width="600"/>
+  <div align="center"><b>Figure 2. SegFormer Framework.</b></div> 
+</div><br>
 <p><strong>Hierarchical Transformer Encoder <span class="citation"
 data-cites="xie2021segformer"></span></strong> The author designed a
 series of MiT (Mix Transformer encoder) encoder models (MiT-B0 to B5),
@@ -419,8 +425,8 @@ zero-shot robustness. However, in this study, we only focus on its
 efficiency and performance, i.e. miou. Experiments have been conducted
 on 3 SegFormer models, namely <strong>SegFormer-B0</strong>,
 <strong>SegFormer-B2</strong> and <strong>SegFormer-B5</strong>.</p>
-<h1 id="sec:experiment">Experiments</h1>
-<h2 id="dataset-description">Dataset Description</h2>
+<h1 id="sec:experiment">3. Experiments</h1>
+<h2 id="dataset-description">3.1 Dataset Description</h2>
 <p><strong>Cityscapes.</strong> The Cityscapes dataset <span
 class="citation" data-cites="cordts2016cityscapes"></span> contains
 images from the driver’s perspective acquired in cities in Germany and
@@ -437,7 +443,7 @@ It provides 200 images for training and 200 images for testing at
 1242x370px. The dataset uses the Cityscapes labelling policy.</p>
 <p><strong>Target Dataset.</strong> Contains 150 training images and 50
 testing images. The given dataset is a subset of the KITTI semantic
-segmentation training set.</p>
+segmentation training set.</p><br>
 <div class="table*">
 <table>
 <thead>
@@ -570,7 +576,8 @@ SegFormer</td>
 </tbody>
 </table>
 </div>
-<h2 id="experiment-workflow">Experiment Workflow</h2>
+<div align="center"><b>Table 1. Overall Result. The symbol * indicates that the model did not pretrained on Cityscape dataset. ● indicates that the model is pretrained and ○ means the opposite. Encoders are pretrained on ImageNet and decoders are pretrained on Cityscape. CWD, T, S represent channel-wise distillation, Teacher and Student respectively. The last row is a future task and will be discuss in Section 4.</b></div> <br><br>
+<h2 id="experiment-workflow">3.2 Experiment Workflow</h2>
 <p>We implement our experiments with PyTorch and MMSegmentation <span
 class="citation" data-cites="pytorch mmseg2020"></span> open-source
 toolbox. Most experiments are conducted on a server with 4 RTX A5000; we
@@ -637,11 +644,12 @@ cityscapes was obtained, which takes 8 hours via 4 Nvidia A5000 GPUs.
 The performance for Swin Tiny + SegFromer products is relatively high;
 however, the FLOPs of this modified architecture increased exponentially
 since this modified architecture will not consider for further
-optimization.</p>
+optimization.</p><br>
 <div align="center" class="figure">
   <img src="images/visualization.png" width="600"/>
-</div>
-<h2 id="experiment-with-segformer-useful-tricks">Experiment with
+  <div align="center"><b>Figure 3. The visualization of segmentation results of test image}s. Compared to other models, SegFormer predicts masks with substantially finer details near object boundaries.</b></div> 
+</div><br>
+<h2 id="experiment-with-segformer-useful-tricks">3.3 Experiment with
 SegFormer (Useful tricks)</h2>
 <p>The SegFromer contains six sizes of encoder and decoder to cover both
 efficiency and performance. We experimentally optimized hyperparameters
@@ -717,7 +725,11 @@ label="adam-corr1"></span> <span id="adam-corr2"
 label="adam-corr2"></span> <span id="adam-xupdate"
 label="adam-xupdate"></span></p>
 </div>
-</div>
+</div><br>
+<div align="center" class="figure">
+  <img src="images/class_distribution.png" width="600"/>
+  <div align="center"><b>Figure 4. Class distribution diagram of the target dataset.</b></div> 
+</div><br>
 <h3 id="class-balanced-loss">Class Balanced Loss <span class="citation"
 data-cites="cui2019class"></span></h3>
 <ul>
@@ -743,9 +755,7 @@ inversely proportional to the adequate number of samples.</p></li>
 performance increased from 72.34% to 74.67% mIoU.</strong></p></li>
 </ul>
 <p><span
-class="math display">$$\mathrm{CE}_{\mathrm{softmax}}(\mathbf{z},
-y)=-\log \left(\frac{\exp \left(z_{y}\right)}{\sum_{j=1}^{C} \exp
-\left(z_{j}\right)}\right)$$</span></p>
+class="math display">$$\mathrm{CE}_{\mathrm{softmax}}(\mathbf{z}, y)=-\log \left(\frac{\exp \left(z_{y}\right)}{\sum{}^{C}_{j=1} \exp \left(z_{j}\right)}\right)$$</span></p>
 <h3 id="online-hard-example-mining-ohem">Online Hard Example Mining
 (OHEM) <span class="citation" data-cites="ohem"></span></h3>
 <ul>
@@ -778,7 +788,11 @@ and performs much worse for small objects. This method has been
 implemented in our codebase, creating multiple-scale images input for
 prediction and averaging the scores as the final prediction.
 <strong>After employing multiple-scale testing/training, the model
-performance increased from 75.98% to 78.12% mIoU.</strong></p>
+performance increased from 75.98% to 78.12% mIoU.</strong></p><br>
+<div align="center" class="figure">
+  <img src="images/multiple_test.png" width="600"/>
+  <div align="center"><b>Figure 5. Multiple Scale Testing.</b></div> 
+</div><br>
 <h3 id="auxiliary-loss">Auxiliary Loss <span class="citation"
 data-cites="pspnet"></span></h3>
 <p>As the network becomes deeper, the training progress decreases
@@ -791,7 +805,7 @@ Then merge auxiliary loss with main loss from decoder head. In our
 implementation, the auxiliary loss weight is 0.4 against the main loss
 weight of 1.0. <strong>After employing Auxiliary loss, the model
 performance increased from 78.12% to 78.45% mIoU.</strong></p>
-<h1 id="sec:conclusion">Conclusion and Future Prospects</h1>
+<h1 id="sec:conclusion">4. Conclusion and Future Prospects</h1>
 <p>Overall, by applying the strong baseline SegFormer we achieve
 fantastic results. The most efficient-performance balanced model
 SegFormer-B2 (FLOPs = 79.472G), a mIoU of 0.7845 is obtained. With the
