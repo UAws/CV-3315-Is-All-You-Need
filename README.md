@@ -76,6 +76,7 @@ solution that satisfies both efficiency and accuracy criteria to the
 given road segmentation task.</p>
 <div align="center" class="figure*">
   <img src="images/Result.png" width="600"/>
+  <div align="center">Performance vs. model efficiency on the target dataset}. The symbol * indicates that the model did not pretrained on Cityscape dataset. ResNet and DeepLabV3Plus are abbreviated as R and DeepLabV3, respectively.</div> 
 </div>
 <h2 id="report-structure">Report Structure</h2>
 <p>The remaining parts of this report are organized as follows. Section
