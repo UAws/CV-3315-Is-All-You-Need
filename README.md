@@ -59,13 +59,16 @@ In object detection, researchers come further a step and try to know all
 objects in an image and the location at which the objects are present
 with the help of bounding boxes. Image segmentation takes it to a new
 level by trying to find out accurately the exact boundary of the objects
-in the image <span class="citation"
+in the image<span class="citation"
 data-cites="surr minaee2021image"></span>.</p>
 <p>In this study, we, as beginners in the field of Computer Vision, aim
 to develop a basic understanding of semantic segmentation by reviewing,
 evaluating, and tuning existing methods, thereby providing a terrific
 solution that satisfies both efficiency and accuracy criteria to the
 given road segmentation task.</p>
+<div align="center" class="figure*">
+  <img src="images/Result.png" width="600"/>
+</div>
 <h2 id="report-structure">Report Structure</h2>
 <p>The remaining parts of this report are organized as follows. Section
 <a href="#sec:method" data-reference-type="ref"
@@ -77,6 +80,33 @@ href="#sec:conclusion" data-reference-type="ref"
 data-reference="sec:conclusion">4</a> concludes the report.</p>
 <h1 id="sec:method">Method</h1>
 <h2 id="baseline-model-analysis">Baseline Model Analysis</h2>
-<div align="center" class="figure*">
-  <img src="images/Result.png" width="600"/>
-</div>
+
+<p>The Baseline model comprises an Encoder-Decoder architecture.
+Basically, it extracts the feature maps from the image input and
+transforms them into the latent representation. The decoder network then
+retrieves those latent-space representations to perform predictions.
+Here, the latent-space representation refers to a high channel feature
+representation that combines useful underlying semantic information.</p>
+<p>The encoder incorporates four downsampling layers to determine the
+intermediate features map. During the downsampling process, the
+activation function adopts RELU to improve the model’s non-linearity.
+MaxPooling plays a significant role during the downsampling operations
+for spatial invariance; the pooling layer selects the maximum value of
+the current view. The convolutional layers take corresponding input
+channels [64, 128, 256, 512, 2048] with kernel size 3x3 and stride 2.
+The relatively small kernel decreases the number of parameters and also
+enhances the non-linearity; here, the stride is the moving step for the
+nearby convolution set to 2 to increase the receptive field.</p>
+<p>Also, we found that the baseline network is very similar to FCN,
+which is the fundamental work of semantic segmentation.</p>
+<p><strong>FCN</strong> <span class="citation" data-cites="fcn"></span>.
+Long et al. first proposed using FCNs trained end-to-end for semantic
+segmentation. FCN utilizes a skip architecture that integrates semantic
+information from a deep, coarse layer with appearance information from a
+shallow, fine layer to produce accurate and detailed segmentations. FCNs
+have only locally connected layers, such as convolutions, pooling and
+upsampling, avoiding any densely connected layer. It also uses skip
+connections from its pooling layers to fully recover fine-grained
+spatial information lost during downsampling <span class="citation"
+data-cites="surr"></span>.</p>
+
