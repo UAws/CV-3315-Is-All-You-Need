@@ -47,9 +47,11 @@
 <a href="https://arxiv.org/abs/2105.15203">
     <img src="https://img.shields.io/badge/transformer-Segformer-ff69b4"/>
 </a>
-
-[![license](https://img.shields.io/github/license/UAws/CV-3315-Is-All-You-Need.svg)](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/master/LICENSE)
 	
+<a href="[https://arxiv.org/abs/2105.15203](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/master/LICENSE)">
+    <img src="https://img.shields.io/github/license/UAws/CV-3315-Is-All-You-Need.svg"/>
+</a>
+
 
 	
 </div>
