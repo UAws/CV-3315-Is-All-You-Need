@@ -293,7 +293,6 @@ upsampling, avoiding any densely connected layer. It also uses skip
 connections from its pooling layers to fully recover fine-grained
 spatial information lost during downsampling <span class="citation"
 data-cites="surr"></span>.</p>
-
 <h2 id="networks-architecture-exploration">1.2 Networks Architecture
 Exploration</h2>
 <p><strong><u>CNN.</u></strong> CNNs have been found quite efficacious
@@ -457,18 +456,21 @@ class="math inline"><em>F</em><sub><em>i</em></sub></span> of different
 resolutions, upsample them to 1/4, and then concat multiple feature maps
 and send them to the subsequent network to obtain segmentation
 results.</p>
-<p><span class="math display">$$\begin{aligned}
+$$\begin{aligned}
 &\hat{F}_{i}=\operatorname{Linear}\left(C_{i}, C\right)\left(F_{i}\right), \forall i \\
 &\hat{F}_{i}=\operatorname{Upsample}\left(\frac{W}{4} \times \frac{W}{4}\right)\left(\hat{F}_{i}\right), \forall i \\
 &F=\operatorname{Linear}(4 C, C)\left(\text { Concat }\left(\hat{F}_{i}\right)\right), \forall i \\
 &M=\operatorname{Linear}\left(C, N_{c l s}\right)(F),
-\end{aligned}$$</span> Note that SegFormer can be seen as a
+\end{aligned}$$
+
+Note that SegFormer can be seen as a
 solid baseline for semantic segmentation since it achieves not only new
 state-of-the-art results on many datasets, but also shows strong
 zero-shot robustness. However, in this study, we only focus on its
 efficiency and performance, i.e. miou. Experiments have been conducted
 on 3 SegFormer models, namely <strong>SegFormer-B0</strong>,
 <strong>SegFormer-B2</strong> and <strong>SegFormer-B5</strong>.</p>
+
 <h1 id="sec:experiment">3. Experiments</h1>
 <h2 id="dataset-description">3.1 Dataset Description</h2>
 <p><strong>Cityscapes.</strong> The Cityscapes dataset <span
@@ -869,6 +871,9 @@ experiments have been successfully conducted on a PSPNet model <span
 class="citation" data-cites="pspnet"></span>. We will keep working on
 this; ideally, we can successfully employ it on the top-performing model
 within two weeks.</p>
+
+
+
 
 ## Appendix
 
