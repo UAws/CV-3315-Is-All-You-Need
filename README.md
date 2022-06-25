@@ -25,7 +25,7 @@
   <div>&nbsp;</div>
 
   <a href="https://jovian.ai/akide/cv-competition-segmentation">
-    <img src="https://img.shields.io/badge/Jovian.Ai-Open%20In%20Jovian-blue"/>
+    <img src="https://img.shields.io/badge/Jovian.Ai-Open%20In%20Jovian-green"/>
   </a>
 
 <a href="https://colab.research.google.com/github/UAws/CV-3315-Is-All-You-Need/blob/main/Segmentation.ipynb">
@@ -53,7 +53,7 @@
 </a>
 	
 <a href="https://cloudreve.vmv.re/s/kZSG">
-    <img src="https://img.shields.io/badge/Model%20Zoo-Download%20Pre--trained%20models%20-green"/>
+    <img src="https://img.shields.io/badge/Model%20Zoo-Download%20Pre--trained%20models%20-blue"/>
 </a>
 
 
