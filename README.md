@@ -456,12 +456,13 @@ class="math inline"><em>F</em><sub><em>i</em></sub></span> of different
 resolutions, upsample them to 1/4, and then concat multiple feature maps
 and send them to the subsequent network to obtain segmentation
 results.</p>
-$$\begin{aligned}
-&\hat{F}_{i}=\operatorname{Linear}\left(C_{i}, C\right)\left(F_{i}\right), \forall i \\
-&\hat{F}_{i}=\operatorname{Upsample}\left(\frac{W}{4} \times \frac{W}{4}\right)\left(\hat{F}_{i}\right), \forall i \\
-&F=\operatorname{Linear}(4 C, C)\left(\text { Concat }\left(\hat{F}_{i}\right)\right), \forall i \\
-&M=\operatorname{Linear}\left(C, N_{c l s}\right)(F),
-\end{aligned}$$
+$$\hat{F}_{i}=\operatorname{Linear}\left(C_{i}, C\right)\left(F_{i}\right), \forall i$$
+
+$$\hat{F}_{i}=\text { Upsample }\left(\frac{W}{4} \times \frac{W}{4}\right)\left(\hat{F}_{i}\right), \forall i$$
+
+$$F=\operatorname{Linear}(4 C, C)\left(\text { Concat }\left(\hat{F}_{i}\right)\right), \forall i$$
+
+$$M=\operatorname{Linear}\left(C, N_{c l s}\right)(F)$$
 
 Note that SegFormer can be seen as a
 solid baseline for semantic segmentation since it achieves not only new
