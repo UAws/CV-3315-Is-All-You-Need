@@ -73,7 +73,7 @@ data-cites="surr minaee2021image"></span>.</p>
 to develop a basic understanding of semantic segmentation by reviewing,
 evaluating, and tuning existing methods, thereby providing a terrific
 solution that satisfies both efficiency and accuracy criteria to the
-given road segmentation task.</p>
+given road segmentation task.</p><br>
 <div align="center" class="figure*">
   <img src="images/Result.png" width="600"/>
   <div align="center"><b>Figure 1. Performance vs. model efficiency on the target dataset. The symbol * indicates that the model did not pretrained on Cityscape dataset. ResNet and DeepLabV3Plus are abbreviated as R and DeepLabV3, respectively</b>.</div> 
@@ -223,6 +223,7 @@ obtain semantic segmentation results.<br />
 </p>
 <div align="center" class="figure">
   <img src="images/segformer.png" width="600"/>
+  <div align="center"><b>Figure 2. SegFormer Framework.</b></div> 
 </div>
 <p><strong>Hierarchical Transformer Encoder <span class="citation"
 data-cites="xie2021segformer"></span></strong> The author designed a
@@ -447,6 +448,7 @@ SegFormer</td>
 </tbody>
 </table>
 </div>
+<div align="center"><b>Table 1. Overall Result. The symbol * indicates that the model did not pretrained on Cityscape dataset. ● indicates that the model is pretrained and ○ means the opposite. Encoders are pretrained on ImageNet and decoders are pretrained on Cityscape. CWD, T, S represent channel-wise distillation, Teacher and Student respectively. The last row is a future task and will be discuss in Section 4.</b></div> 
 <h2 id="experiment-workflow">3.2 Experiment Workflow</h2>
 <p>We implement our experiments with PyTorch and MMSegmentation <span
 class="citation" data-cites="pytorch mmseg2020"></span> open-source
@@ -517,6 +519,7 @@ since this modified architecture will not consider for further
 optimization.</p>
 <div align="center" class="figure">
   <img src="images/visualization.png" width="600"/>
+  <div align="center"><b>Figure 3. The visualization of segmentation results of test image}s. Compared to other models, SegFormer predicts masks with substantially finer details near object boundaries.</b></div> 
 </div>
 <h2 id="experiment-with-segformer-useful-tricks">3.3 Experiment with
 SegFormer (Useful tricks)</h2>
@@ -597,6 +600,7 @@ label="adam-xupdate"></span></p>
 </div>
 <div align="center" class="figure">
   <img src="images/class_distribution.png" width="600"/>
+  <div align="center"><b>Figure 4. Class distribution diagram of the target dataset.</b></div> 
 </div>
 <h3 id="class-balanced-loss">Class Balanced Loss <span class="citation"
 data-cites="cui2019class"></span></h3>
@@ -659,6 +663,7 @@ prediction and averaging the scores as the final prediction.
 performance increased from 75.98% to 78.12% mIoU.</strong></p>
 <div align="center" class="figure">
   <img src="images/multiple_test.png" width="600"/>
+  <div align="center"><b>Figure 5. Multiple Scale Testing.</b></div> 
 </div>
 <h3 id="auxiliary-loss">Auxiliary Loss <span class="citation"
 data-cites="pspnet"></span></h3>
