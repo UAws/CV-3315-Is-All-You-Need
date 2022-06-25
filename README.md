@@ -63,18 +63,20 @@ There is screenshot of results displayed during the experiment, it's persistent 
 ## Evaluation
 
 <div align="center">
-	<h3>View Evaluation On Jovian.ai </h3>
-  <a href="https://jovian.ai/akide/cv-competition-segmentation">
-    <img src="https://img.shields.io/badge/Jovian.Ai-Open%20In%20Jovian-blue" alt="Open In Colab"/>
-  </a>
+	<h3>View Evaluation On Jovian.ai
+	  <a href="https://jovian.ai/akide/cv-competition-segmentation">
+	    <img src="https://img.shields.io/badge/Jovian.Ai-Open%20In%20Jovian-blue" alt="Open In Colab"/>
+	  </a>
+	</h3>
 </div>
 
 
 <div align="center">
-	<h3>View Evaluation On Colaboratory </h3>
-  <a href="https://colab.research.google.com/github/UAws/CV-3315-Is-All-You-Need/blob/main/Segmentation.ipynb">
-    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-  </a>
+	<h3>View Evaluation On Colaboratory 
+	  <a href="https://colab.research.google.com/github/UAws/CV-3315-Is-All-You-Need/blob/main/Segmentation.ipynb">
+	    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+	  </a>
+	</h3>
 </div>
 
 
