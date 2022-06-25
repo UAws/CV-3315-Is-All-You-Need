@@ -48,8 +48,12 @@
     <img src="https://img.shields.io/badge/transformer-Segformer-ff69b4"/>
 </a>
 	
-<a href="[https://arxiv.org/abs/2105.15203](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/master/LICENSE)">
+<a href="https://github.com/UAws/CV-3315-Is-All-You-Need/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/UAws/CV-3315-Is-All-You-Need.svg"/>
+</a>
+	
+<a href="https://cloudreve.vmv.re/s/kZSG">
+    <img src="https://img.shields.io/badge/Model%20Zoo-Download%20Pre--trained%20models%20-green"/>
 </a>
 
 
@@ -60,11 +64,11 @@
 
 - ### The preprint view report temporarily available at [CV_COMPETITION_Public.pdf](https://minio.llycloud.com/public/cv3315/CV_COMPETITION_Public.pdf) , arXiv version GA in next 3 days.
 
-- ### There is a bridge to connect mmseg and our evaluation notebook refers to **[loader.py](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/bridge/loader.py)** .
+- ### There is a bridge connector between mmseg and our evaluation notebook refers to **[loader.py](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/bridge/loader.py)** .
 
-- ### We implemented grey scale out for calculate mIoU refers to [segmentors/base.py](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/mmseg/models/segmentors/base.py#L217-L301) .
+- ### We implemented grey scale output for calculate mIoU refers to [segmentors/base.py](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/mmseg/models/segmentors/base.py#L217-L301) .
 
-- ### There is [accurate Flops counter](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/tools/get_flops_fvscore.py) fvcore integrated to mmseg codebase to examining transformer-based model efficiency.
+- ### There is a more accurate [Flops counter](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/tools/get_flops_fvscore.py) fvcore integrated to mmseg codebase to examining transformer-based model efficiency.
 
 
 
@@ -686,7 +690,7 @@ however, the FLOPs of this modified architecture increased exponentially
 since this modified architecture will not consider for further
 optimization.</p><br>
 <div align="center" class="figure">
-  <img src="images/visualization.png" width="600"/>
+  <img src="images/visualization.png" width="1400"/>
   <div align="center"><b>Figure 3. The visualization of segmentation results of test image}s. Compared to other models, SegFormer predicts masks with substantially finer details near object boundaries.</b></div> 
 </div><br>
 <h2 id="experiment-with-segformer-useful-tricks">3.3 Experiment with
@@ -728,7 +732,7 @@ batches normal initialization. <strong>After employing transfer
 learning, the model performance increased from 61.41% to 68.31%
 mIoU.</strong></p>
 <div align="center" class="figure">
-  <img src="images/alg.png" width="600"/>
+  <img src="images/alg_adam.png" width="500"/>
 </div>
 <h3 id="learning-rate-scheduler">Learning Rate Scheduler</h3>
 <p>Some research shows that the learning rate is one of the most
