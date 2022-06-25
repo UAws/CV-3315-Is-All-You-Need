@@ -23,7 +23,7 @@
        University of Adelaide
   </div>
   <div>&nbsp;</div>
-
+</div>
 
 ## Report Preview
 
@@ -33,7 +33,10 @@
 
 ## Model Real World Application
 
-[![Youtube](https://minio.llycloud.com/image/uPic/image-20220625rbHWgi.png)](https://www.youtube.com/watch?v=tKUe0yRzNrM)
+
+[![Youtube](https://img.youtube.com/vi/tKUe0yRzNrM/0.jpg)](https://www.youtube.com/watch?v=tKUe0yRzNrM)
+
+
 
 This is a preview video captured nearby The University Of Adelaide and applied our pre-trained model segformer-B5 on the completion dataset.
 
