@@ -291,7 +291,7 @@ shallow, fine layer to produce accurate and detailed segmentations. FCNs
 have only locally connected layers, such as convolutions, pooling and
 upsampling, avoiding any densely connected layer. It also uses skip
 connections from its pooling layers to fully recover fine-grained
-spatial information lost during downsampling <span class="citation"
+spatial information lost during downsampling<span class="citation"
 data-cites="surr"></span>.</p>
 <h2 id="networks-architecture-exploration">1.2 Networks Architecture
 Exploration</h2>
