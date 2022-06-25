@@ -861,3 +861,9 @@ experiments have been successfully conducted on a PSPNet model <span
 class="citation" data-cites="pspnet"></span>. We will keep working on
 this; ideally, we can successfully employ it on the top-performing model
 within two weeks.</p>
+
+## Appendix
+
+Evaluation on Full test set by segformer-B5
+
+![eval_all](Segmentation_files/Segmentation_112_0.png)
