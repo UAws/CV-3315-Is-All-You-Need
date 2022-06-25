@@ -690,7 +690,7 @@ however, the FLOPs of this modified architecture increased exponentially
 since this modified architecture will not consider for further
 optimization.</p><br>
 <div align="center" class="figure">
-  <img src="images/visualization.png" width="1000"/>
+  <img src="images/visualization.png" width="1400"/>
   <div align="center"><b>Figure 3. The visualization of segmentation results of test image}s. Compared to other models, SegFormer predicts masks with substantially finer details near object boundaries.</b></div> 
 </div><br>
 <h2 id="experiment-with-segformer-useful-tricks">3.3 Experiment with
@@ -732,7 +732,7 @@ batches normal initialization. <strong>After employing transfer
 learning, the model performance increased from 61.41% to 68.31%
 mIoU.</strong></p>
 <div align="center" class="figure">
-  <img src="images/alg2.png" width="600"/>
+  <img src="images/alg_adam.png" width="500"/>
 </div>
 <h3 id="learning-rate-scheduler">Learning Rate Scheduler</h3>
 <p>Some research shows that the learning rate is one of the most
