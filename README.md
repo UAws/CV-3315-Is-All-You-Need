@@ -625,7 +625,7 @@ mIoU of 0.2760, which is an abysmal result. To improve the model
 performance, we decided to follow the tricks in the notebook and see if
 a better result could be obtained. All results are displayed in <a
 href="#tab:bigtable" data-reference-type="ref"
-data-reference="tab:bigtable">[tab:bigtable]</a>.</p>
+data-reference="tab:bigtable">Table 1.</a>.</p>
 <p>Since we are dealing with a small dataset, data augmentation can be
 applied. We conducted multiple manipulations including RandomCrop,
 RandomFlip, PhotoMetricDistortion, Resize, Normalize and Pad to training
@@ -639,9 +639,7 @@ so far are default, the next step is to tune the network. As it is known
 that the tuning process is more empirical than theoretical in deep
 learning, we did a board search and decided to conduct our experiments
 on an open-source toolbox — MMSegmentation.</p>
-<p>MMSegmentation <span class="citation" data-cites="mmseg2020"></span>.
-MMSegmentation is an open-source semantic segmentation toolbox based on
-PyTorch. It provides a unified benchmark toolbox for various semantic
+<p><b>MMSegmentation</b>. MMSegmentation is an open-source semantic segmentation toolbox based on PyTorch. It provides a unified benchmark toolbox for various semantic
 segmentation methods and directly supports popular and contemporary
 semantic segmentation frameworks, e.g. PSPNet, DeepLabV3Plus, SegFormer,
 etc. By decomposing the semantic segmentation framework into different
@@ -723,6 +721,9 @@ model is used as the starting point instead of random initialization or
 batches normal initialization. <strong>After employing transfer
 learning, the model performance increased from 61.41% to 68.31%
 mIoU.</strong></p>
+<div align="center" class="figure">
+  <img src="images/alg.png" width="600"/>
+</div>
 <h3 id="learning-rate-scheduler">Learning Rate Scheduler</h3>
 <p>Some research shows that the learning rate is one of the most
 important hyperparameters for deep learning because it directly affects
