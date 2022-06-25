@@ -728,7 +728,7 @@ batches normal initialization. <strong>After employing transfer
 learning, the model performance increased from 61.41% to 68.31%
 mIoU.</strong></p>
 <div align="center" class="figure">
-  <img src="images/alg.png" width="600"/>
+  <img src="images/alg2.png" width="600"/>
 </div>
 <h3 id="learning-rate-scheduler">Learning Rate Scheduler</h3>
 <p>Some research shows that the learning rate is one of the most
