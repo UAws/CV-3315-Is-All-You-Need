@@ -189,7 +189,7 @@ bash tools/dist_train.sh configs/segformer/segformer_mit-b2_8x1_1024x1024_160k_k
 
 <h1 id="sec:abs">ABSTRACT</h1>
 <p>This competition focus on Urban-Sense Segmentation based on the vehicle camera view. Class highly unbalanced Urban-Sense images dataset challenge the existing solutions and further studies. Deep Conventional neural network-based semantic segmentation methods such as encoder-decoder architecture and multi-scale and pyramid-based approaches become flexible solutions applicable to real-world applications. In this competition, we mainly review the literature and conduct experiments on transformer-driven methods especially SegFormer, to achieve an optimal trade-off between performance and efficiency. For example, SegFormer-B0 achieved 74.6% mIoU with the smallest FLOPS, 15.6G, and the largest model, SegFormer-B5 archived 80.2% mIoU. According to multiple factors, including individual case failure analysis, individual class performance, training pressure and efficiency estimation, the final candidate model for the competition is SegFormer-B2 with 50.6 GFLOPS and 78.5% mIoU evaluated on the testing set.</p>
-<h1 id="sec:intro">Background</h1>
+<h1 id="sec:intro">1. Background</h1>
 <p>Deep learning has been very successful when working with images as
 data and is currently at a stage where it works better than humans on
 multiple use-cases. The most critical problems humans have been
@@ -212,7 +212,7 @@ given road segmentation task.</p><br>
   <img src="images/Result.png" width="600"/>
   <div align="center"><b>Figure 1. Performance vs. model efficiency on the target dataset. The symbol * indicates that the model did not pretrained on Cityscape dataset. ResNet and DeepLabV3Plus are abbreviated as R and DeepLabV3, respectively</b>.</div> 
 </div><br>
-<h2 id="report-structure">Report Structure</h2>
+<h2 id="report-structure">1.1 Report Structure</h2>
 <p>The remaining parts of this report are organized as follows. Section
 <a href="#sec:method" data-reference-type="ref"
 data-reference="sec:method">2</a> reviews the baseline model and
@@ -221,8 +221,8 @@ in Section <a href="#sec:experiment" data-reference-type="ref"
 data-reference="sec:experiment">3</a>, and Section <a
 href="#sec:conclusion" data-reference-type="ref"
 data-reference="sec:conclusion">4</a> concludes the report.</p>
-<h1 id="sec:method">1. Method</h1>
-<h2 id="baseline-model-analysis">1.1 Baseline Model Analysis</h2>
+<h1 id="sec:method">2. Method</h1>
+<h2 id="baseline-model-analysis">2.1 Baseline Model Analysis</h2>
 
 <p>The Baseline model comprises an Encoder-Decoder architecture.
 Basically, it extracts the feature maps from the image input and
@@ -253,7 +253,7 @@ connections from its pooling layers to fully recover fine-grained
 spatial information lost during downsampling <span class="citation"
 data-cites="surr"></span>.</p>
 
-<h2 id="networks-architecture-exploration">1.2 Networks Architecture
+<h2 id="networks-architecture-exploration">2.2 Networks Architecture
 Exploration</h2>
 <p><strong><u>CNN.</u></strong> CNNs have been found quite efficacious
 for many computer vision tasks in recent years <span class="citation"
