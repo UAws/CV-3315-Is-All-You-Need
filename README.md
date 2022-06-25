@@ -680,7 +680,7 @@ however, the FLOPs of this modified architecture increased exponentially
 since this modified architecture will not consider for further
 optimization.</p><br>
 <div align="center" class="figure">
-  <img src="images/visualization.png" width="600"/>
+  <img src="images/visualization.png" width="1000"/>
   <div align="center"><b>Figure 3. The visualization of segmentation results of test image}s. Compared to other models, SegFormer predicts masks with substantially finer details near object boundaries.</b></div> 
 </div><br>
 <h2 id="experiment-with-segformer-useful-tricks">3.3 Experiment with
