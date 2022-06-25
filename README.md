@@ -220,6 +220,9 @@ features and low-resolution detail features.<br />
 Decoder – A lightweight full MLP decoder fuses multi-level features to
 obtain semantic segmentation results.<br />
 </p>
+<div align="center" class="figure">
+  <img src="images/segformer.png" width="600"/>
+</div>
 <p><strong>Hierarchical Transformer Encoder <span class="citation"
 data-cites="xie2021segformer"></span></strong> The author designed a
 series of MiT (Mix Transformer encoder) encoder models (MiT-B0 to B5),
@@ -591,6 +594,9 @@ label="adam-corr2"></span> <span id="adam-xupdate"
 label="adam-xupdate"></span></p>
 </div>
 </div>
+<div align="center" class="figure">
+  <img src="images/class_distribution.png" width="600"/>
+</div>
 <h3 id="class-balanced-loss">Class Balanced Loss <span class="citation"
 data-cites="cui2019class"></span></h3>
 <ul>
@@ -650,6 +656,9 @@ implemented in our codebase, creating multiple-scale images input for
 prediction and averaging the scores as the final prediction.
 <strong>After employing multiple-scale testing/training, the model
 performance increased from 75.98% to 78.12% mIoU.</strong></p>
+<div align="center" class="figure">
+  <img src="images/multiple_test.png" width="600"/>
+</div>
 <h3 id="auxiliary-loss">Auxiliary Loss <span class="citation"
 data-cites="pspnet"></span></h3>
 <p>As the network becomes deeper, the training progress decreases
