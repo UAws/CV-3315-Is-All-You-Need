@@ -47,7 +47,6 @@ English | [简体中文](README_zh-CN.md)
 
 ---
 
-```html
 <h1 id="sec:intro">Background</h1>
 <p>Deep learning has been very successful when working with images as
 data and is currently at a stage where it works better than humans on
@@ -81,4 +80,3 @@ data-reference="sec:conclusion">4</a> concludes the report.</p>
 <div align="center" class="figure*">
   <img src="images/Result.png" width="600"/>
 </div>
-```
