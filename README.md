@@ -77,7 +77,7 @@ given road segmentation task.</p><br>
 <div align="center" class="figure*">
   <img src="images/Result.png" width="600"/>
   <div align="center"><b>Figure 1. Performance vs. model efficiency on the target dataset. The symbol * indicates that the model did not pretrained on Cityscape dataset. ResNet and DeepLabV3Plus are abbreviated as R and DeepLabV3, respectively</b>.</div> 
-</div>
+</div><br>
 <h2 id="report-structure">Report Structure</h2>
 <p>The remaining parts of this report are organized as follows. Section
 <a href="#sec:method" data-reference-type="ref"
@@ -220,11 +220,11 @@ Encoder – Layered Transformer produces high resolution low-level
 features and low-resolution detail features.<br />
 Decoder – A lightweight full MLP decoder fuses multi-level features to
 obtain semantic segmentation results.<br />
-</p>
+</p><br>
 <div align="center" class="figure">
   <img src="images/segformer.png" width="600"/>
   <div align="center"><b>Figure 2. SegFormer Framework.</b></div> 
-</div>
+</div><br>
 <p><strong>Hierarchical Transformer Encoder <span class="citation"
 data-cites="xie2021segformer"></span></strong> The author designed a
 series of MiT (Mix Transformer encoder) encoder models (MiT-B0 to B5),
@@ -315,7 +315,7 @@ It provides 200 images for training and 200 images for testing at
 1242x370px. The dataset uses the Cityscapes labelling policy.</p>
 <p><strong>Target Dataset.</strong> Contains 150 training images and 50
 testing images. The given dataset is a subset of the KITTI semantic
-segmentation training set.</p>
+segmentation training set.</p><br>
 <div class="table*">
 <table>
 <thead>
@@ -448,7 +448,7 @@ SegFormer</td>
 </tbody>
 </table>
 </div>
-<div align="center"><b>Table 1. Overall Result. The symbol * indicates that the model did not pretrained on Cityscape dataset. ● indicates that the model is pretrained and ○ means the opposite. Encoders are pretrained on ImageNet and decoders are pretrained on Cityscape. CWD, T, S represent channel-wise distillation, Teacher and Student respectively. The last row is a future task and will be discuss in Section 4.</b></div> 
+<div align="center"><b>Table 1. Overall Result. The symbol * indicates that the model did not pretrained on Cityscape dataset. ● indicates that the model is pretrained and ○ means the opposite. Encoders are pretrained on ImageNet and decoders are pretrained on Cityscape. CWD, T, S represent channel-wise distillation, Teacher and Student respectively. The last row is a future task and will be discuss in Section 4.</b></div> <br><br>
 <h2 id="experiment-workflow">3.2 Experiment Workflow</h2>
 <p>We implement our experiments with PyTorch and MMSegmentation <span
 class="citation" data-cites="pytorch mmseg2020"></span> open-source
@@ -516,11 +516,11 @@ cityscapes was obtained, which takes 8 hours via 4 Nvidia A5000 GPUs.
 The performance for Swin Tiny + SegFromer products is relatively high;
 however, the FLOPs of this modified architecture increased exponentially
 since this modified architecture will not consider for further
-optimization.</p>
+optimization.</p><br>
 <div align="center" class="figure">
   <img src="images/visualization.png" width="600"/>
   <div align="center"><b>Figure 3. The visualization of segmentation results of test image}s. Compared to other models, SegFormer predicts masks with substantially finer details near object boundaries.</b></div> 
-</div>
+</div><br>
 <h2 id="experiment-with-segformer-useful-tricks">3.3 Experiment with
 SegFormer (Useful tricks)</h2>
 <p>The SegFromer contains six sizes of encoder and decoder to cover both
@@ -597,11 +597,11 @@ label="adam-corr1"></span> <span id="adam-corr2"
 label="adam-corr2"></span> <span id="adam-xupdate"
 label="adam-xupdate"></span></p>
 </div>
-</div>
+</div><br>
 <div align="center" class="figure">
   <img src="images/class_distribution.png" width="600"/>
   <div align="center"><b>Figure 4. Class distribution diagram of the target dataset.</b></div> 
-</div>
+</div><br>
 <h3 id="class-balanced-loss">Class Balanced Loss <span class="citation"
 data-cites="cui2019class"></span></h3>
 <ul>
@@ -660,11 +660,11 @@ and performs much worse for small objects. This method has been
 implemented in our codebase, creating multiple-scale images input for
 prediction and averaging the scores as the final prediction.
 <strong>After employing multiple-scale testing/training, the model
-performance increased from 75.98% to 78.12% mIoU.</strong></p>
+performance increased from 75.98% to 78.12% mIoU.</strong></p><br>
 <div align="center" class="figure">
   <img src="images/multiple_test.png" width="600"/>
   <div align="center"><b>Figure 5. Multiple Scale Testing.</b></div> 
-</div>
+</div><br>
 <h3 id="auxiliary-loss">Auxiliary Loss <span class="citation"
 data-cites="pspnet"></span></h3>
 <p>As the network becomes deeper, the training progress decreases
