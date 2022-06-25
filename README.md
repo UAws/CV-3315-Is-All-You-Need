@@ -3,10 +3,10 @@
   <div>&nbsp;</div>
   <div align="center">
       <a href="https://github.com/AkideLiu">
-        <b>Akide Liu</b>
+        <b>Akide Liu*</b>
       </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <a href="https://github.com/Anzhu-W">
-        <b>Zihan Wang</b>
+        <b>Zihan Wang*</b>
       </a>
   </div>
   <div>&nbsp;</div>
@@ -27,14 +27,15 @@
 
 ## Report Preview
 
-### The preprint view report temporarily available at https://minio.llycloud.com/public/cv3315/CV_COMPETITION_Public.pdf , arXiv version GA in next 3 days.
+### The preprint view report temporarily available at [CV_COMPETITION_Public.pdf](https://minio.llycloud.com/public/cv3315/CV_COMPETITION_Public.pdf) , arXiv version GA in next 3 days.
 
 
 
 ## Model Real World Application
 
 
-[![Youtube](https://img.youtube.com/vi/tKUe0yRzNrM/0.jpg)](https://www.youtube.com/watch?v=tKUe0yRzNrM)
+[![Youtube](images/youtube.png)](https://www.youtube.com/watch?v=tKUe0yRzNrM)
+
 
 
 
