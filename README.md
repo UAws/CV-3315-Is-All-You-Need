@@ -503,6 +503,9 @@ The performance for Swin Tiny + SegFromer products is relatively high;
 however, the FLOPs of this modified architecture increased exponentially
 since this modified architecture will not consider for further
 optimization.</p>
+<div align="center" class="figure">
+  <img src="images/visualization.png" width="600"/>
+</div>
 <h2 id="experiment-with-segformer-useful-tricks">Experiment with
 SegFormer (Useful tricks)</h2>
 <p>The SegFromer contains six sizes of encoder and decoder to cover both
