@@ -317,7 +317,7 @@ segmentation training set.</p>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Baseline 180 Epochs Baseline</td>
-<td style="text-align: center;">(0,0) circle (0.8ex);</td>
+<td style="text-align: center;">○</td>
 <td style="text-align: center;">(0,0) circle (0.8ex);</td>
 <td style="text-align: center;"><strong>0.2760</strong></td>
 <td rowspan="2" style="text-align: center;">67.003G</td>
