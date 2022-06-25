@@ -317,7 +317,7 @@ segmentation training set.</p>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Baseline 180 Epochs Baseline</td>
-<td style="text-align: center;">○</td>
+<td style="text-align: right;">○</td>
 <td style="text-align: center;">(0,0) circle (0.8ex);</td>
 <td style="text-align: center;"><strong>0.2760</strong></td>
 <td rowspan="2" style="text-align: center;">67.003G</td>
@@ -337,7 +337,7 @@ segmentation training set.</p>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Deeplabv3Plus &amp; ResNet18</td>
-<td style="text-align: center;">(0,0) circle (0.9ex);</td>
+<td style="text-align: center;">●</td>
 <td style="text-align: center;">(0,0) circle (0.8ex);</td>
 <td style="text-align: center;">0.5682</td>
 <td style="text-align: center;">97.193G</td>
