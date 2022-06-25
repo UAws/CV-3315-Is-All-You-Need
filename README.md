@@ -47,7 +47,13 @@ English | [简体中文](README_zh-CN.md)
 
 ---
 
-<h1 id="sec:intro">Background</h1>
+<h1 id="sec:abs">ABSTRACT</h1>
+<p>This competition focus on Urban-Sense Segmentation based on the vehicle camera view. Class highly unbalanced Urban-Sense images dataset challenge the existing solutions and further studies. Deep Conventional neural network-based semantic segmentation methods such as encoder-decoder architecture and multi-scale and pyramid-based approaches become flexible solutions applicable to real-world applications. In this competition, we mainly review the literature and conduct experiments on transformer-driven methods especially SegFormer, to achieve an optimal trade-off between performance and efficiency. For example, SegFormer-B0 achieved 74.6% mIoU with the smallest FLOPS, 15.6G, and the largest model, SegFormer-B5 archived 80.2% mIoU. According to multiple factors, including individual case failure analysis, individual class performance, training pressure and efficiency estimation, the final candidate model for the competition is SegFormer-B2 with 50.6 GFLOPS and 78.5% mIoU evaluated on the testing set.</p>
+<p>In this study, we, as beginners in the field of Computer Vision, aim
+to develop a basic understanding of semantic segmentation by reviewing,
+evaluating, and tuning existing methods, thereby providing a terrific
+solution that satisfies both efficiency and accuracy criteria to the
+given road segmentation task.</p><h1 id="sec:intro">Background</h1>
 <p>Deep learning has been very successful when working with images as
 data and is currently at a stage where it works better than humans on
 multiple use-cases. The most critical problems humans have been
