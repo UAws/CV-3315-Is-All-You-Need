@@ -293,6 +293,7 @@ upsampling, avoiding any densely connected layer. It also uses skip
 connections from its pooling layers to fully recover fine-grained
 spatial information lost during downsampling<span class="citation"
 data-cites="surr"></span>.</p>
+
 <h2 id="networks-architecture-exploration">1.2 Networks Architecture
 Exploration</h2>
 <p><strong><u>CNN.</u></strong> CNNs have been found quite efficacious
@@ -636,7 +637,7 @@ mIoU of 0.2760, which is an abysmal result. To improve the model
 performance, we decided to follow the tricks in the notebook and see if
 a better result could be obtained. All results are displayed in <a
 href="#tab:bigtable" data-reference-type="ref"
-data-reference="tab:bigtable">Table 1.</a>.</p>
+data-reference="tab:bigtable">Table 1.</a></p>
 <p>Since we are dealing with a small dataset, data augmentation can be
 applied. We conducted multiple manipulations including RandomCrop,
 RandomFlip, PhotoMetricDistortion, Resize, Normalize and Pad to training
