@@ -616,9 +616,7 @@ inversely proportional to the adequate number of samples.</p></li>
 performance increased from 72.34% to 74.67% mIoU.</strong></p></li>
 </ul>
 <p><span
-class="math display">$$\mathrm{CE}_{\mathrm{softmax}}(\mathbf{z},
-y)=-\log \left(\frac{\exp \left(z_{y}\right)}{\sum_{j=1}^{C} \exp
-\left(z_{j}\right)}\right)$$</span></p>
+class="math display">$$\mathrm{CE}_{\mathrm{softmax}}(\mathbf{z}, y)=-\log \left(\frac{\exp \left(z_{y}\right)}{\sum_{j=1}^{C} \exp \left(z_{j}\right)}\right)$$</span></p>
 <h3 id="online-hard-example-mining-ohem">Online Hard Example Mining
 (OHEM) <span class="citation" data-cites="ohem"></span></h3>
 <ul>
