@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/logo.png" width="600"/>
+  <img src="images/logo1.png" width="600"/>
   <div>&nbsp;</div>
   <div align="center">
       <a href="https://github.com/AkideLiu">
@@ -10,7 +10,8 @@
       </a>
   </div>
   <div>&nbsp;</div>
-  
+
+
    <div align="center">
       School of Computer Science
     &nbsp;&nbsp;&nbsp;&nbsp;
@@ -22,7 +23,6 @@
        University of Adelaide
   </div>
   <div>&nbsp;</div>
-
 
 <br />
 
