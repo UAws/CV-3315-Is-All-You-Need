@@ -94,6 +94,18 @@ Additional requirements : [environment-linux.yml](https://github.com/UAws/CV-331
 
 Our development environment is based on `CUDA 11.7` and `pytorch 1.12.0`
 
+### Dataset preparation 
+
+we provide a pre-formatted dataset for quick start
+
+```bash
+mkdir -p data/
+wget -nv http://vmv.re/E7kMX -O data/kitti-seg-competition.tar.gz
+tar -zxvf data/kitti-seg-competition.tar.gz -C data/
+mv data/kitti-seg-competition-zip data/kitti-seg-competition
+rm -rf data/kitti-seg-competition.tar.gz
+```
+
 ## Experiment Visualization
 
 Thanks for experimental tracing system provided by [WandB](https://jovian.ai/outlink?url=https%3A%2F%2Fwandb.ai%2F)
