@@ -86,8 +86,8 @@ in Section <a href="#sec:experiment" data-reference-type="ref"
 data-reference="sec:experiment">3</a>, and Section <a
 href="#sec:conclusion" data-reference-type="ref"
 data-reference="sec:conclusion">4</a> concludes the report.</p>
-<h1 id="sec:method">Method</h1>
-<h2 id="baseline-model-analysis">Baseline Model Analysis</h2>
+<h1 id="sec:method">1. Method</h1>
+<h2 id="baseline-model-analysis">1.1 Baseline Model Analysis</h2>
 
 <p>The Baseline model comprises an Encoder-Decoder architecture.
 Basically, it extracts the feature maps from the image input and
@@ -118,7 +118,7 @@ connections from its pooling layers to fully recover fine-grained
 spatial information lost during downsampling <span class="citation"
 data-cites="surr"></span>.</p>
 
-<h2 id="networks-architecture-exploration">Networks Architecture
+<h2 id="networks-architecture-exploration">1.2 Networks Architecture
 Exploration</h2>
 <p><strong><u>CNN.</u></strong> CNNs have been found quite efficacious
 for many computer vision tasks in recent years <span class="citation"
@@ -292,8 +292,8 @@ zero-shot robustness. However, in this study, we only focus on its
 efficiency and performance, i.e. miou. Experiments have been conducted
 on 3 SegFormer models, namely <strong>SegFormer-B0</strong>,
 <strong>SegFormer-B2</strong> and <strong>SegFormer-B5</strong>.</p>
-<h1 id="sec:experiment">Experiments</h1>
-<h2 id="dataset-description">Dataset Description</h2>
+<h1 id="sec:experiment">3. Experiments</h1>
+<h2 id="dataset-description">3.1 Dataset Description</h2>
 <p><strong>Cityscapes.</strong> The Cityscapes dataset <span
 class="citation" data-cites="cordts2016cityscapes"></span> contains
 images from the driver’s perspective acquired in cities in Germany and
@@ -443,7 +443,7 @@ SegFormer</td>
 </tbody>
 </table>
 </div>
-<h2 id="experiment-workflow">Experiment Workflow</h2>
+<h2 id="experiment-workflow">3.2 Experiment Workflow</h2>
 <p>We implement our experiments with PyTorch and MMSegmentation <span
 class="citation" data-cites="pytorch mmseg2020"></span> open-source
 toolbox. Most experiments are conducted on a server with 4 RTX A5000; we
@@ -514,7 +514,7 @@ optimization.</p>
 <div align="center" class="figure">
   <img src="images/visualization.png" width="600"/>
 </div>
-<h2 id="experiment-with-segformer-useful-tricks">Experiment with
+<h2 id="experiment-with-segformer-useful-tricks">3.3 Experiment with
 SegFormer (Useful tricks)</h2>
 <p>The SegFromer contains six sizes of encoder and decoder to cover both
 efficiency and performance. We experimentally optimized hyperparameters
@@ -664,7 +664,7 @@ Then merge auxiliary loss with main loss from decoder head. In our
 implementation, the auxiliary loss weight is 0.4 against the main loss
 weight of 1.0. <strong>After employing Auxiliary loss, the model
 performance increased from 78.12% to 78.45% mIoU.</strong></p>
-<h1 id="sec:conclusion">Conclusion and Future Prospects</h1>
+<h1 id="sec:conclusion">4. Conclusion and Future Prospects</h1>
 <p>Overall, by applying the strong baseline SegFormer we achieve
 fantastic results. The most efficient-performance balanced model
 SegFormer-B2 (FLOPs = 79.472G), a mIoU of 0.7845 is obtained. With the
