@@ -45,7 +45,7 @@
 </a>
 	
 <a href="https://arxiv.org/abs/2105.15203">
-    <img src="https://img.shields.io/badge/transformer-Segformer-ff69b4"/>
+    <img src="https://img.shields.io/badge/transformer-SegFormer-ff69b4"/>
 </a>
 	
 <a href="https://github.com/UAws/CV-3315-Is-All-You-Need/blob/master/LICENSE">
@@ -62,15 +62,16 @@
 
 ## Highlights
 
-- ### CV 3315 refers to The University of Adelaide Course COMP SCI 3315 Computer Vision Semantic Segmentation Competition Lead by [Dr. Yifan Liu](https://irfanicmll.github.io/)
+- ### CV 3315 refers to The University of Adelaide Course COMP SCI 3315 Computer Vision Semantic Segmentation Competition. Course Coordinator: [Dr. Yifan Liu](https://irfanicmll.github.io/)
 
-- ### The preprint report temporarily available at [CV_COMPETITION_Public.pdf](https://minio.llycloud.com/public/cv3315/CV_COMPETITION_Public.pdf) , arXiv version GA in next 3 days.
+- ### The preprint report temporarily available at [CV_COMPETITION_Public.pdf](https://minio.llycloud.com/public/cv3315/CV_COMPETITION_Public.pdf) , arXiv version GA in the next 3 days.
 
 - ### There is a bridge connector between mmseg and our evaluation notebook refers to **[loader.py](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/bridge/loader.py)** .
 
-- ### We implemented grey scale output for calculate mIoU refers to [segmentors/base.py](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/mmseg/models/segmentors/base.py#L217-L301) .
+- ### We implemented grey scale output for calculating mIoU refers to [segmentors/base.py](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/mmseg/models/segmentors/base.py#L217-L301) .
 
-- ### There is a more accurate [Flops counter](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/tools/get_flops_fvscore.py) fvcore integrated to mmseg codebase to examining transformer-based model efficiency.
+- ### There is a widely used [Flops counter](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/tools/get_flops_fvscore.py) fvcore integrated to mmseg codebase to examine transformer-based model efficiency.
+
 
 
 
@@ -82,7 +83,7 @@
 
 
 
-This is a preview video captured nearby The University Of Adelaide and applied our pre-trained model segformer-B5 on the completion dataset.
+A demo video captured nearby the University of Adelaide. The segmentation is performed by the pre-trained model SegFormer-B5.
 
 
 
@@ -92,9 +93,9 @@ For Installation, please refer to the guidelines in [MMSegmentation v0.25.0](htt
 
 For the dataset preparation, please refer own [customized dataloader](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/configs/_base_/datasets/kitti_seg_basic.py) and more general adaptable dataset support is [working in progress](https://github.com/open-mmlab/mmsegmentation/pull/1602) to contribute to mmseg mainline codebase.
 
-Additional requirements : [environment-linux.yml](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/environment-linux.yml)
+Additional requirements: [environment-linux.yml](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/environment-linux.yml)
 
-Our development environment is based on `CUDA 11.7` and `pytorch 1.11.0`
+Our development environment is based on `CUDA 11.7` and `PyTorch 1.11.0`
 
 ### Dataset preparation 
 
@@ -110,9 +111,9 @@ rm -rf data/kitti-seg-competition.tar.gz
 
 ## Experiment Visualization
 
-Thanks for experimental tracing system provided by [WandB](https://jovian.ai/outlink?url=https%3A%2F%2Fwandb.ai%2F)
+Thanks for the experimental tracing system delivered via [WandB](https://jovian.ai/outlink?url=https%3A%2F%2Fwandb.ai%2F)
 
-There is screenshot of results displayed during the experiment, it's persistent record the running logs and figures for better analysis, evaluation and experiment reproducibility.
+There is a screenshot of results displayed during the experiment; it persistent records the running logs and figures for better analysis, evaluation and experiment reproducibility.
 
 [![wandb](https://minio.llycloud.com/image/uPic/image-2022062542UBJ4.png)](https://wandb.ai/ak6/mmseg_training_kitti_segFormer/reports/CV-3315-Is-All-You-Need-Report--VmlldzoyMjIzMjM3?accessToken=qz2bicligu2cru0yr8ws9mijx8dnajhv6m9iq4gdacuuyma6ao5dqlfu7t08hp1d)
 
@@ -136,10 +137,11 @@ There is screenshot of results displayed during the experiment, it's persistent 
 </div>
 
 
+For a more detailed explanation of evaluation and inference, please refer [MMseg Official docs](https://github.com/open-mmlab/mmsegmentation/blob/v0.25.0/docs/en/inference.md)
 
-For more detailed explanation of evaluation and inference please refer [MMseg Official docs](https://github.com/open-mmlab/mmsegmentation/blob/v0.25.0/docs/en/inference.md)
 
-### Segformer B0 Most Efficient
+
+### SegFormer B0 Most Efficient
 
 ```bash
 mkdir -p checkpoints
@@ -150,7 +152,7 @@ python tools/test.py configs/segformer/segformer_mit-b0_8x1_1024x1024_160k_kitti
 
 
 
-### Segformer B2 FOR FINAL COMPETITION
+### SegFormer B2 FOR FINAL COMPETITION
 
 ```bash
 mkdir -p checkpoints
@@ -160,7 +162,7 @@ python tools/test.py configs/segformer/segformer_mit-b2_8x1_1024x1024_160k_kitti
 
 
 
-### Segformer B5 Best Performance
+### SegFormer B5 Best Performance
 
 ```bash
 mkdir -p checkpoints work_dirs/Segformer_B5/out_images
@@ -210,7 +212,7 @@ python tools/test.py configs/deeplabv3plus/deeplabv3plus_r101-d8_512x1024_40k_ki
 
 
 
-### Swin v1 Tiny 22k + Segformer
+### Swin v1 Tiny 22k + SegFormer
 
 ```bash
 mkdir -p checkpoints
@@ -225,9 +227,9 @@ python tools/test.py configs/segformer/segformer_swin_4x2_1024x1024_160k_kitti.p
 
 For more detailed explanation of training please refer [MMseg Official docs](https://github.com/open-mmlab/mmsegmentation/blob/v0.25.0/docs/en/train.md)
 
-### Segformer B2
+### SegFormer B2
 
-Following command will download imagenet 1k pre-trained backbone `mit-b2` and cityscapes pre-trained decoder `segformer` to perform transfer learning on 4 GPUs for 20K iterations.
+Following command will download imagenet 1k pre-trained backbone `mit-b2` and cityscapes pre-trained decoder `SegFormer` to perform transfer learning on 4 GPUs for 20K iterations.
 
 ```bash
 mkdir pretrain checkpoints
@@ -243,7 +245,7 @@ bash tools/dist_train.sh configs/segformer/segformer_mit-b2_8x1_1024x1024_160k_k
 ---
 
 <h1 id="sec:abs">ABSTRACT</h1>
-<p>This competition focus on Urban-Sense Segmentation based on the vehicle camera view. Class highly unbalanced Urban-Sense images dataset challenge the existing solutions and further studies. Deep Conventional neural network-based semantic segmentation methods such as encoder-decoder architecture and multi-scale and pyramid-based approaches become flexible solutions applicable to real-world applications. In this competition, we mainly review the literature and conduct experiments on transformer-driven methods especially SegFormer, to achieve an optimal trade-off between performance and efficiency. For example, SegFormer-B0 achieved 74.6% mIoU with the smallest FLOPS, 15.6G, and the largest model, SegFormer-B5 archived 80.2% mIoU. According to multiple factors, including individual case failure analysis, individual class performance, training pressure and efficiency estimation, the final candidate model for the competition is SegFormer-B2 with 50.6 GFLOPS and 78.5% mIoU evaluated on the testing set.</p>
+<p>This competition focus on Urban-Sense Segmentation based on the vehicle camera view. Class highly unbalanced Urban-Sense images dataset challenge the existing solutions and further studies. Deep Conventional neural network-based semantic segmentation methods such as encoder-decoder architecture and multi-scale and pyramid-based approaches become flexible solutions applicable to real-world applications. In this competition, we review relevant literature and conduct experiments on transformer-driven methods, primarily focusing on SegFormer, aiming for an optimal trade-off between model performance and efficiency. For instance, SegFormer-B0 achieved 74.6% mIoU with the smallest FLOPS, 15.6G; the largest model, SegFormer-B5 archived 80.2% mIoU. According to multiple factors, including individual case failure analysis, individual class performance, training pressure and efficiency estimation, the final candidate model for the competition is SegFormer-B2 with 50.6 GFLOPS and 78.5% mIoU evaluated on the testing set.</p>
 <h1 id="sec:intro">Background</h1>
 <p>Deep learning has been very successful when working with images as
 data and is currently at a stage where it works better than humans on
