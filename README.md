@@ -32,7 +32,7 @@
     <img src="https://colab.research.google.com/assets/colab-badge.svg"/>
   </a>
 
-<a href="https://minio.llycloud.com/public/cv3315/CV_COMPETITION_Public.pdf">
+<a href="https://arxiv.org/abs/2206.12571">
     <img src="https://img.shields.io/badge/Report-View%20Report-red" alt="Open In Colab"/>
   </a>	
 	
@@ -64,7 +64,7 @@
 
 - ### CV 3315 refers to The University of Adelaide Course COMP SCI 3315 Computer Vision Semantic Segmentation Competition. Course Coordinator: [Dr. Yifan Liu](https://irfanicmll.github.io/)
 
-- ### The preprint report temporarily available at [CV_COMPETITION_Public.pdf](https://minio.llycloud.com/public/cv3315/CV_COMPETITION_Public.pdf) , arXiv version GA in the next 3 days.
+- ### Checkout technical report at [arXiv:2206.12571](https://arxiv.org/abs/2206.12571).
 
 - ### There is a bridge connector between mmseg and our evaluation notebook refers to **[loader.py](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/bridge/loader.py)** .
 
