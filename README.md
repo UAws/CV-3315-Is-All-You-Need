@@ -64,7 +64,7 @@
 
 - ### CV 3315 refers to The University of Adelaide Course COMP SCI 3315 Computer Vision Semantic Segmentation Competition. Course Coordinator: [Dr. Yifan Liu](https://irfanicmll.github.io/)
 
-- ### Checkout technical report at [arXiv:2206.12571](https://arxiv.org/abs/2206.12571).
+- ### Checkout our technical report at [arXiv:2206.12571](https://arxiv.org/abs/2206.12571).
 
 - ### There is a bridge connector between mmseg and our evaluation notebook refers to **[loader.py](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/bridge/loader.py)** .
 
