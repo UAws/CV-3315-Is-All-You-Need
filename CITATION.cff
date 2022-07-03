@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-  - name: "MMSegmentation Contributors"
-title: "OpenMMLab Semantic Segmentation Toolbox and Benchmark"
-date-released: 2020-07-10
-url: "https://github.com/open-mmlab/mmsegmentation"
+  - name: "Akide Liu and Zihan Wang"
+title: "CV 3315 Is All You Need : Semantic Segmentation Competition"
+date-released: 2022-06-23
+url: "https://github.com/UAws/CV-3315-Is-All-You-Need"
 license: Apache-2.0
