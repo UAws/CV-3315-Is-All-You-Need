@@ -240,7 +240,16 @@ wget http://vmv.re/NVIhC -O checkpoints/segformer_mit-b2_8x1_1024x1024_160k_city
 bash tools/dist_train.sh configs/segformer/segformer_mit-b2_8x1_1024x1024_160k_kitti.py 4 --load-from checkpoints/segformer_mit-b2_8x1_1024x1024_160k_cityscapes_20211207_134205-6096669a.pth
 ```
 
-##   
+## Citation
+
+```
+@article{liu2022cv,
+  title={CV 3315 Is All You Need: Semantic Segmentation Competition},
+  author={Liu, Akide and Wang, Zihan},
+  journal={arXiv preprint arXiv:2206.12571},
+  year={2022}
+}
+```
 
 
 
