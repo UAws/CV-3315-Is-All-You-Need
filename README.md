@@ -64,6 +64,8 @@
 
 - ### CV 3315 refers to The University of Adelaide Course COMP SCI 3315 Computer Vision Semantic Segmentation Competition. Course Coordinator: [Dr. Yifan Liu](https://irfanicmll.github.io/)
 
+- ### 🔥🔥 This work ranked as *#1* in this semantic segmentation competition. 🔥🔥
+
 - ### Checkout our technical report at [arXiv:2206.12571](https://arxiv.org/abs/2206.12571).
 
 - ### There is a bridge connector between mmseg and our evaluation notebook refers to **[loader.py](https://github.com/UAws/CV-3315-Is-All-You-Need/blob/main/bridge/loader.py)** .
@@ -297,6 +299,9 @@ channels [64, 128, 256, 512, 2048] with kernel size 3x3 and stride 2.
 The relatively small kernel decreases the number of parameters and also
 enhances the non-linearity; here, the stride is the moving step for the
 nearby convolution set to 2 to increase the receptive field.</p>
+<p>
+The decoder of the baseline model plays an essential role in up-sampling the features map to the score map. The decoder network has four stages of up-sampling layers with a corresponding restore rate [1/16,1/8,1/4,1/2]. For each up-sampling layer using deconvolution as know as max-unpooling. Max-unpooling eliminates the need for learning to up-sample based on the location of the maximum value, the max-pooled values are placed, and a reminder of the matrix is loaded with zeros. The final layer directly connects to score maps using bilinear interpolation.
+</
 <p>Also, we found that the baseline network is very similar to FCN,
 which is the fundamental work of semantic segmentation.</p>
 <p><strong>FCN</strong> <span class="citation" data-cites="fcn"></span>.
