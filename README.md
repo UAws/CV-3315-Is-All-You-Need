@@ -62,7 +62,7 @@
 
 ## Highlights
 
-- ### CV 3315 refers to The University of Adelaide Course COMP SCI 3315 Computer Vision Semantic Segmentation Competition. Course Coordinator: [Dr. Yifan Liu](https://irfanicmll.github.io/)
+- ### CV 3315 refers to The University of Adelaide Course COMP SCI 3315 Computer Vision Semantic Segmentation Competition. Course Coordinator: [Dr. Yifan Liu](https://yifaninmemory.vmv.re/)
 
 - ### 🔥🔥 This work ranked as *#1* in this semantic segmentation competition. 🔥🔥
 
